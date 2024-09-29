@@ -41,6 +41,7 @@
     "gulp-ttf2woff2": "^5.0.0",
     "gulp-uglify": "^3.0.2",
     "gulp-uglify-es": "^3.0.0",
+    "swiper": "^11.1.14",
     "vinyl-buffer": "^1.0.1",
     "vinyl-source-stream": "^2.0.0"
   }
