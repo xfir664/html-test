@@ -10,26 +10,21 @@ img {
 }
 
 .container {
-    min-width: $display-mobile;
-
-    @media (min-width: $display-tablet) {
-        min-width: $display-tablet;
-    }
-
-    @media (min-width: $display-desktop) {
-        max-width: $display-desktop;
-    }
+    margin: 0 auto;
+    padding: 0 10px;
+    width: 100%;
+    max-width: $desktop;
 }
 
 .hidden {
     display: hidden;
 }
 
-.title {
+.primary-title {
     // margin: 0;
 }
 
-.paragraph {
+.base-text {
     // margin: 0;
 }
 
@@ -44,7 +39,7 @@ img {
     // background-color: transparent;
 }
 
-.list {
+.list-style-none {
     // margin: 0;
     // padding: 0;
     // list-style: none;
