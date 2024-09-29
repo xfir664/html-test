@@ -83,6 +83,7 @@
             border-radius: 10px;
             background-color: rgba($PURPLE_9564AA, 0.1);
             flex-grow: 1;
+            transition: 0.3s ease-in-out;
         }
 
         &__item-text {
@@ -99,8 +100,9 @@
             border: 2px solid $RED_AA6464;
 
 
-            .price__item-link {
+            .price__item-button {
                 width: 185px;
+
             }
         }
 
@@ -133,7 +135,7 @@
             border-radius: 50%;
         }
 
-        &__item-link {
+        &__item-button {
             display: flex;
             width: 120px;
             min-height: 52px;
@@ -142,6 +144,7 @@
             border-radius: 5px;
             background-color: $BASE_WHITE;
             color: rgba($BASE_BLACK, 0.2);
+            cursor: pointer;
         }
 
         &__item:hover {
