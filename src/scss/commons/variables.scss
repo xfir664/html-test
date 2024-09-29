@@ -1,0 +1,17 @@
+// Тут переменные 
+
+$display-mobile: 320px;
+// $display-tablet: 768px;
+$display-desctop: 1170px;
+
+:root {
+    --display-width: $display-mobile;
+
+    // @media (min-width: $display-tablet) {
+    //     --display-width: $display-tablet;
+    // }
+
+    @media (min-width: $display-desctop) {
+        --display-width: $display-desctop;
+    }
+}

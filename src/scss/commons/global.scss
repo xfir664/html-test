@@ -1,5 +1,9 @@
-body {
-    background: #000;
-    color: red;
-    align-items: center;
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: var(--display-width);
 }
