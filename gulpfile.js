@@ -32,6 +32,7 @@ export function startServer() {
 
   gulp.watch(`./${paths.source}/index.html`, gulp.series(includeIndexPage));
   gulp.watch(`./${paths.source}/pages/**/*.html`, gulp.series(includeOtherPages));
+  gulp.watch(`./${paths.source}/components/**/*.html`, gulp.series(includeOtherPages, includeIndexPage));
   gulp.watch(`./${paths.source}/scss/**/*.scss`, gulp.series(sass));
   gulp.watch(`./${paths.source}/scripts/**/*.js`, gulp.series(initScript));
 }
