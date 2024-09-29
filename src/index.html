@@ -9,10 +9,19 @@
 </head>
 
 <body class="page">
-    <header class="page__header">
+    <header class="page__header header">
+        @@include_once("./components/blocks/header.html")
     </header>
     <main class="page__content">
-        @@include_once("./components/blocks/hero.html")
+        <div class="container">
+            <div class="content">
+                @@include_once("./components/blocks/user-navbar.html")
+                <div class="content__container">
+                    @@include_once("./components/blocks/hero.html")
+                    @@include_once("./components/blocks/service.html")
+                </div>
+            </div>
+        </div>
     </main>
     <script src="./scripts/main.min.js"></script>
 </body>
