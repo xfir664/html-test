@@ -3,26 +3,31 @@ body {
     padding: 0;
 }
 
-.title {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     margin: 0;
 }
 
-.paragraph {
+p {
     margin: 0;
 }
 
-.link {
+a {
     color: inherit;
     text-decoration: none;
 }
 
-.button { 
+button { 
     cursor: pointer;
     border: none;
     background-color: transparent;
 }
 
-.list {
+ul, ol {
     margin: 0;
     padding: 0;
     list-style: none;

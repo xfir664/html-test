@@ -1,17 +1,20 @@
 // Тут переменные 
 
 $display-mobile: 320px;
-// $display-tablet: 768px;
-$display-desctop: 1170px;
+$display-tablet: 768px;
+$display-desktop: 1170px;
 
-:root {
-    --display-width: $display-mobile;
+$bg-base: $BASE_WHITE;
+$bg-primart: $PURPLE_9564AA;
 
-    // @media (min-width: $display-tablet) {
-    //     --display-width: $display-tablet;
-    // }
+$txt-clr-base: $BASE_WHITE;
+$txt-clr-primary: $BASE_BLACK;
+$txt-clr-secondary: $PURPLE_9564AA;
 
-    @media (min-width: $display-desctop) {
-        --display-width: $display-desctop;
-    }
-}
+$icon-color-base: $PURPLE_9564AA;
+$icon-color-hover: $YELLOW_FFCF2D;
+
+$btn-bg-color: $BASE_WHITE;
+
+$border-clr-base: $PURPLE_9564AA;
+$border-clr-secondary: $RED_AA6464;
