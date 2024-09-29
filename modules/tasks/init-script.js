@@ -21,13 +21,6 @@ function initScripts() {
         global: true
       })
       .bundle()
-      .on(
-        'error',
-        notify.onError({
-          title: 'JS compiling error',
-          wait: true,
-        })
-      )
       .pipe(source('main.js'))
       .pipe(buffer())
       .pipe(uglify())

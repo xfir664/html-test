@@ -1,1 +1,0 @@
-# Папка vendor для vendor
