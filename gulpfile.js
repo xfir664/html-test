@@ -13,7 +13,7 @@ const {
   copyImages,
   copyFonts,
   initScript,
-  refreshPage,
+  createVendors,
 } = tasks
 
 function reloadServer (done) {
@@ -47,6 +47,7 @@ export function startDev(done) {
       copyImages,
       copyFonts,
       initScript,
+      createVendors,
     ),
     startServer
   )
