@@ -184,8 +184,14 @@
     .policy-form {
         display: flex;
         justify-content: flex-start;
-        align-items: center;
+        flex-direction: column;
         gap: 10px;
+
+        &__block {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
 
         &__text {
             margin: 0;
@@ -219,6 +225,7 @@
             border: 1px solid $PURPLE_9564AA;
             border-radius: 5px;
             background-color: $BASE_WHITE;
+            cursor: pointer;
         }
 
         &__input:not(:disabled):not(:checked)+span:hover::before {
