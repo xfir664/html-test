@@ -11,6 +11,7 @@
         position: relative;
         width: 23px;
         height: 14px;
+
         &--no-js {
             display: none;
         }
@@ -50,7 +51,8 @@
         }
     }
 
-    &__logo, &__text {
+    &__logo,
+    &__text {
         display: none;
     }
 
@@ -58,7 +60,7 @@
         display: block;
         margin-left: auto;
 
-        & img { 
+        & img {
             display: block;
         }
     }
@@ -88,7 +90,8 @@
             display: none;
         }
 
-        &__logo, &__text {
+        &__logo,
+        &__text {
             display: block;
         }
 
@@ -105,9 +108,9 @@
         }
 
         &__content {
-        display: grid;
-        grid-template-columns: repeat(12, 70px);
-        column-gap: 30px;
+            display: grid;
+            grid-template-columns: repeat(12, minmax(60px, 70px));
+            column-gap: 30px;
         }
 
         &__premium-link {
