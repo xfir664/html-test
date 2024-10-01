@@ -34,8 +34,10 @@
       min-height: auto;
       align-items: flex-start;
       max-width: 170px;
-      padding: 50px 5% 0 5%;
+      padding: 55px 5% 0 5%;
     }
+
+
 
     &::after {
       content: '';
@@ -93,9 +95,9 @@
       order: 3;
 
       @media screen and (min-width: $desktop) {
-        width: 50%;
+        width: 170px;
         max-width: none;
-        padding: 50px 12% 0 12%;
+
       }
 
       &::after {
@@ -148,10 +150,17 @@
     }
   }
 
+  &__item-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   &__item:nth-of-type(1) {
     @media screen and (min-width: $desktop) {
       grid-column: 5 / 7;
       grid-row: 1/1;
+      order: 0;
     }
   }
 
@@ -159,6 +168,7 @@
     @media screen and (min-width: $desktop) {
       grid-column: 8 / 10;
       grid-row: 1/1;
+      order: 0;
     }
   }
 
@@ -166,6 +176,7 @@
     @media screen and (min-width: $desktop) {
       grid-column: 5 / 6;
       grid-row: 2/2;
+      order: 0;
     }
   }
 
@@ -175,7 +186,7 @@
     @media screen and (min-width: $desktop) {
       grid-row: 2/2;
       grid-column: 6/ 9;
-      order: 1;
+      order: 0;
     }
   }
 
@@ -183,6 +194,7 @@
     @media screen and (min-width: $desktop) {
       grid-column: 9 / 10;
       grid-row: 2/2;
+      order: 0;
     }
   }
 
