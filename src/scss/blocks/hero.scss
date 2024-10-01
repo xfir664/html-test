@@ -291,6 +291,20 @@
                 gap: 11px;
                 justify-content: center;
                 align-items: center;
+                width: 150px;
+                min-height: 123px;
+                background-color: rgba($PURPLE_9564AA, 0.1);
+                flex-grow: 1;
+                transition: 0.3s ease-in-out;
+            }
+
+            &__item-swiper-block {
+                padding: 0;
+                margin: 0;
+                display: grid;
+                gap: 11px;
+                justify-content: center;
+                align-items: center;
                 padding-top: 15px;
                 padding-bottom: 17px;
                 width: 150px;
@@ -308,22 +322,41 @@
 
             &__item:nth-child(n+6) {
                 display: flex;
-                gap: 41px;
+                row-gap: 41px;
                 padding: 0;
                 max-width: auto;
                 min-height: 74px;
                 background-color: rgba($RED_AA6464, 0.2);
-                border: 2px solid $RED_AA6464;
+
 
 
                 .price__item-button {
                     width: 185px;
 
                 }
+
+                .price__item-swiper-block {
+                    padding: 0;
+                    margin: 0;
+                    display: flex;
+                    gap: 41px;
+                    justify-content: center;
+                    min-height: 74px;
+                    align-items: center;
+                    border: 2px solid $RED_AA6464;
+                    border-radius: 10px;
+                    background-color: rgba($RED_AA6464, 0.2);
+                    flex-grow: 1;
+                    transition: 0.3s ease-in-out;
+                }
             }
 
-            &__item:nth-child(n+6):hover>.price__item-text {
+            &__item:nth-child(n+6):hover>.price__item-swiper-block>.price__item-text {
                 display: none;
+            }
+
+            &__item:nth-child(n+6):hover {
+                background-color: $RED_AA6464;
             }
 
 
