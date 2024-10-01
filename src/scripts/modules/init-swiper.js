@@ -1,26 +1,28 @@
 import Swiper from 'swiper';
 
-export function initSwiper () {
-    // init Swiper:
-const swiper = new Swiper('.swiper', {
-    // Optional parameters
-    direction: 'horizontal',
-    loop: true,
-  
-    // If we need pagination
-    pagination: {
-      el: '.swiper-pagination',
-    },
-  
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-  
-    // And if we need scrollbar
-    scrollbar: {
-      el: '.swiper-scrollbar',
-    },
-  });
+const swiperWrapper = document.querySelector('.policy-form__swiper');
+
+let swiper;
+
+function initSwiper () {
+  if(window.innerWidth < 1170) {
+    if(!swiperWrapper.classList.contains('price-swiper')) {
+      swiperWrapper.classList.add('price-swiper');
+      swiper = new Swiper('.price-swiper', {
+        slidePerView: 1,
+        direction: 'horizontal',
+        loop: true,
+      })
+    }
+  } else {
+    swiperWrapper.classList.remove('price-swiper');
+    if(swiper) {
+      swiper.destroy(true, true);
+      swiper = null;
+    }
+  }
+}
+
+export function addSwiper () {
+  window.addEventListener('resize', initSwiper)
 }
