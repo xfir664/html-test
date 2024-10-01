@@ -59,7 +59,18 @@
         height: 50px;
         transform: translate(-50%, 0);
       }
+
+
     }
+
+    // &:hover {
+    //   @media screen and (min-width: $desktop) {
+    //     &::after {
+
+    //     }
+    //   }
+    // }
+
 
     &--message {
       &::after {
@@ -67,6 +78,32 @@
         background-size: 18px;
       }
     }
+
+    &--message:hover {
+      @media screen and (min-width: $desktop) {
+        &::after {
+          background-image: none;
+        }
+
+        &::before {
+          content: '';
+          position: absolute;
+          top: 50%;
+          transform: translate(212%, -48%);
+          width: 30px;
+          height: 30px;
+          left: 6px;
+          top: 24px;
+          mask-image: url('./../images/message.svg');
+          mask-repeat: no-repeat;
+          mask-position: center;
+          mask-size: 18px;
+          border-radius: 50%;
+          background-color: #FFCF2D;
+        }
+      }
+    }
+
 
     &--messages {
       display: none;
@@ -82,6 +119,33 @@
       }
     }
 
+    &--messages:hover {
+      @media screen and (min-width: $desktop) {
+        &::after {
+          background-image: none;
+        }
+
+        &::before {
+          content: '';
+          position: absolute;
+          top: 50%;
+          transform: translate(212%, -45%);
+          width: 30px;
+          height: 30px;
+          left: 6px;
+          top: 24px;
+          mask-image: url('./../images/message.svg');
+          mask-repeat: no-repeat;
+          mask-position: center;
+          mask-size: 18px;
+          border-radius: 50%;
+          background-color: #FFCF2D;
+        }
+      }
+
+    }
+
+
     &--premium {
       order: 4;
 
@@ -90,6 +154,32 @@
         background-size: 18px;
       }
     }
+
+    &--premium:hover {
+      @media screen and (min-width: $desktop) {
+        &::after {
+          background-image: none;
+        }
+
+        &::before {
+          content: '';
+          position: absolute;
+          top: 50%;
+          transform: translate(212%, -48%);
+          width: 30px;
+          height: 30px;
+          left: 6px;
+          top: 24px;
+          mask-image: url('./../images/heart.svg');
+          mask-repeat: no-repeat;
+          mask-position: center;
+          mask-size: 18px;
+          border-radius: 50%;
+          background-color: #FFCF2D;
+        }
+      }
+    }
+
 
     &--gift {
       order: 3;
@@ -106,11 +196,61 @@
       }
     }
 
+    &--gift:hover {
+      @media screen and (min-width: $desktop) {
+        &::after {
+          background-image: none;
+        }
+
+        &::before {
+          content: '';
+          position: absolute;
+          top: 50%;
+          transform: translate(212%, -48%);
+          width: 30px;
+          height: 30px;
+          left: 6px;
+          top: 24px;
+          mask-image: url('./../images/gift.svg');
+          mask-repeat: no-repeat;
+          mask-position: center;
+          mask-size: 18px;
+          border-radius: 50%;
+          background-color: #FFCF2D;
+        }
+      }
+    }
+
     &--eye {
 
       &::after {
         background: rgba(149, 100, 170, 0.1) url('./../images/eye.svg') no-repeat center;
         background-size: 18px;
+      }
+    }
+
+    &--eye:hover {
+      @media screen and (min-width: $desktop) {
+        &::after {
+          background-image: none;
+        }
+
+        &::before {
+          content: '';
+          position: absolute;
+          top: 50%;
+          transform: translate(212%, -48%);
+          width: 30px;
+          height: 30px;
+          left: 6px;
+          top: 24px;
+          mask-image: url('./../images/eye.svg');
+          mask-repeat: no-repeat;
+          mask-position: center;
+          mask-size: 18px;
+          border-radius: 50%;
+          background-color: #FFCF2D;
+        }
       }
     }
 
@@ -125,6 +265,31 @@
       &::after {
         background: rgba(149, 100, 170, 0.1) url('./../images/settings.svg') no-repeat center;
         background-size: 18px;
+      }
+    }
+
+    &--settings:hover {
+      @media screen and (min-width: $desktop) {
+        &::after {
+          background-image: none;
+        }
+
+        &::before {
+          content: '';
+          position: absolute;
+          top: 50%;
+          transform: translate(212%, -45%);
+          width: 30px;
+          height: 30px;
+          left: 6px;
+          top: 24px;
+          mask-image: url('./../images/settings.svg');
+          mask-repeat: no-repeat;
+          mask-position: center;
+          mask-size: 18px;
+          border-radius: 50%;
+          background-color: #FFCF2D;
+        }
       }
     }
 
@@ -148,7 +313,11 @@
         display: none;
       }
     }
+
+
   }
+
+
 
   &__item-text {
     display: flex;
