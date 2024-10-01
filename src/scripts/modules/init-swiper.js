@@ -24,5 +24,6 @@ function initSwiper () {
 }
 
 export function addSwiper () {
+  initSwiper();
   window.addEventListener('resize', initSwiper)
 }
