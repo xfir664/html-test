@@ -12,18 +12,23 @@
 
     .price {
         display: flex;
+
         &__item {
-            display: flex;
             flex-grow: 1;
             position: relative;
             min-height: 59px;
+            border-radius: 10px;
+            padding-left: 20px;
+        }
+
+        &__item-swiper-block {
+            background-color: $PURPLE_9564AA;
             border: 2px solid $PURPLE_9564AA;
             border-radius: 10px;
-            background-color: $PURPLE_9564AA;
+            min-height: 59px;
             justify-content: flex-end;
             align-items: center;
-            padding-right: 0;
-            padding-left: 100px;
+            display: flex;
         }
 
 
@@ -66,7 +71,7 @@
             font-weight: 700;
             margin: 0;
             padding: 0;
-            top: 15px;
+            top: 17px;
             right: 155px;
         }
 
