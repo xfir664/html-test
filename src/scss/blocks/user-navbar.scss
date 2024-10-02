@@ -9,7 +9,7 @@
     width: 100%;
     background-color: $BASE_WHITE;
     opacity: 0;
-    transform: translateX(-300px);
+    transform: translateX(-100%);
     transition: .3s ease all;
 
     &--active {
