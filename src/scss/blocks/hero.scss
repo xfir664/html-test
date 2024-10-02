@@ -86,17 +86,16 @@
     }
 
     .policy-form {
+        overflow: hidden;
 
         &__swiper {
-            overflow: hidden;
-            margin-bottom: 34px;
+            margin-bottom: 49px;
+            position: relative;
 
             @media (min-width: $desktop) {
                 overflow: visible;
             }
         }
-
-
 
         &__button-mobile {
             display: flex;
@@ -204,6 +203,17 @@
         &__input:disabled+span {
             opacity: 20%;
         }
+
+        &__pagination-list {
+            bottom: -20px;
+        }
+    }
+
+    .swiper-pagination-bullet {
+        width: 7px;
+        height: 7px;
+        background-color: $YELLOW_FFCF2D;
+        margin: 8px;
     }
 }
 
@@ -225,7 +235,6 @@
 
         .timer {
             display: flex;
-            margin-bottom: 26px;
             min-height: 82px;
             background-color: #C15CA1;
             justify-content: space-between;
@@ -466,6 +475,7 @@
         }
 
         .policy-form {
+            padding-top: 26px;
             display: flex;
             justify-content: flex-start;
             flex-direction: column;

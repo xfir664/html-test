@@ -1,4 +1,5 @@
 import Swiper from 'swiper';
+import Pagination from 'swiper/modules/pagination.mjs';
 
 const swiperWrapper = document.querySelector('.policy-form__swiper');
 
@@ -9,9 +10,15 @@ function initSwiper () {
     if(!swiperWrapper.classList.contains('price-swiper')) {
       swiperWrapper.classList.add('price-swiper');
       swiper = new Swiper('.price-swiper', {
+        modules: [Pagination],
         slidePerView: 1,
         direction: 'horizontal',
         loop: true,
+
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        }
       })
     }
   } else {
